@@ -1,0 +1,18 @@
+@startuml
+start
+
+fork
+    :食べる;
+fork again
+    :呑む;
+    note left
+        お酒
+    end note
+end fork
+
+floating note right
+    晩ごはん
+end note
+
+end
+@enduml

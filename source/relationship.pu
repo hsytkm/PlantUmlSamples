@@ -1,0 +1,22 @@
+@startuml
+interface IFooable {
+    + void Foo()
+}
+
+class Object {
+}
+
+class Foo {
+}
+
+class Bar {
+}
+
+class Hoge {
+}
+
+Foo ...|> IFooable: 実装：(has-a/part-of 関係, interface)
+Foo --|> Object: 汎化：(is-a 関係, inheritance)
+Foo *- Bar: コンポジション：両者に強い結びつき
+Bar o-- Hoge: 集約：強い結びつきなし
+@enduml

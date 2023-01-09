@@ -1,0 +1,23 @@
+@startuml
+' アクセス修飾子
+'  + : public
+'  # : protected
+'  - : private
+'  ~ : package private
+
+class Person {
+    +public +
+    #protected #
+    -private -
+    ~ package private ~
+
+    -int _weight
+
+    +public(+)
+    #protected(#)
+    -private(-)
+    ~ package private(~)
+
+    +void AddWeight(int value)
+}
+@enduml

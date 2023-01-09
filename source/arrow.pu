@@ -1,0 +1,14 @@
+@startuml
+' 定義
+actor A
+boundary B
+control C
+entity D
+database E
+
+' 処理
+A -> B
+A -> C
+A -[#red]> D: red
+A -[#0000FF]> E: 0000FF
+@enduml

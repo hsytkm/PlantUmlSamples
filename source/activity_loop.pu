@@ -1,0 +1,13 @@
+@startuml
+start
+
+repeat
+    :ごはん;
+repeat while (おなか一杯？)
+
+while (別腹一杯？)
+    :スイーツ;
+endwhile
+
+end
+@enduml

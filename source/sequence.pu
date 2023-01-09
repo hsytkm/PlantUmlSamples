@@ -1,0 +1,23 @@
+@startuml
+A -> B: message (->)
+
+B->B : I am thinking
+...5 minutes later...
+B --> A: response (-->)
+note right: this is note
+
+' 分岐の書き方
+alt condition
+    A -> B: true case
+else
+    A -> B: false case
+    /'
+        ループの書き方
+    '/
+    loop i < 10
+        A -> B: insert(i)
+    end
+end
+
+
+@enduml

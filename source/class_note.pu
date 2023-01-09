@@ -1,0 +1,13 @@
+@startuml
+class Foo {
+}
+class Bar {
+}
+
+note top of Foo: Fooの説明
+
+note "FooとBarの説明" as NoteName
+NoteName .. Foo
+NoteName .. Bar
+
+@enduml

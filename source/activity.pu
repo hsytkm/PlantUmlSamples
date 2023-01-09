@@ -1,0 +1,7 @@
+@startuml
+start
+:処理1;
+-> 矢印へのコメント;
+:処理2;
+end
+@enduml

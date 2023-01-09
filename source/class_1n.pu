@@ -1,0 +1,11 @@
+@startuml
+class A {
+}
+class B {
+}
+class C {
+}
+
+A "*" -* "1" B
+B "*" -* "1" C
+@enduml

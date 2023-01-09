@@ -1,0 +1,8 @@
+@startuml
+autonumber
+ref over A, B, C: 初期化処理
+A -> B: 主処理
+B -> C: API呼び出し
+B --> A: 結果
+ref over A, B, C: 後始末
+@enduml

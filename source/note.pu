@@ -1,0 +1,14 @@
+@startuml
+' 連番を付与
+autonumber
+A ->x B
+note right of
+    message1
+end note
+A ->> C
+note over of
+    message2
+end note
+A -// D
+A -\\ E
+@enduml

@@ -1,0 +1,6 @@
+@startuml
+class Foo {
+    {static} -int staticCounter
+    {abstract} #void abstractMethod()
+}
+@enduml
