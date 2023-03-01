@@ -1,0 +1,18 @@
+@startuml
+title 依存関係の逆転 (ioc)
+
+interface I {
+  + void F()
+}
+
+class ML1 {
+  + void F()
+}
+
+class HL1 {
+}
+
+I <|.. ML1: 継承関係 (interface)
+HL1 -> I: Fを呼び出し (仮想)
+HL1 .> ML1: Fを呼び出し (実態)
+@enduml
